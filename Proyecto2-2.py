@@ -153,7 +153,7 @@ for item in registros:  #muestra todos los datos
 
 
 print ("--------------------------------------------------")
-print ("El total de las ventas de Hoy es: ",[Total])
+print ("El total de las ventas de Hoy es: ",[Total])        #MUestra el total de las ventas
 print ("--------------------------------------------------")
 
 
