@@ -155,6 +155,8 @@ for item in registros:  #muestra todos los datos
 print ("--------------------------------------------------")
 print ("El total de las ventas de Hoy es: ",[Total])        #MUestra el total de las ventas
 print ("--------------------------------------------------")
+print ("El total de elementos la variable registros es: ",[len(registros)])
+print ("--------------------------------------------------")
 
 
 with open ('registros.json', 'w') as archivo:       # Guardar la infomacion en un archivo json

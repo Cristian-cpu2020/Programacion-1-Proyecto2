@@ -1,5 +1,4 @@
 import os
-
 import json
 
 lista = []
@@ -31,7 +30,7 @@ while True:     #Mientras el usuario escriba "y" en la parte de abajo se seguira
 
 
     opcion = input ("Desea ver el contenido de otra carpeta (y/n)")
-    if opcion == "n":
+    if opcion == "n" or opcion =="N":
         break
 
 print ("Gracias!")
