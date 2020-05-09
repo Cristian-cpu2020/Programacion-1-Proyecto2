@@ -21,16 +21,15 @@ def jugar():
         print ("Computadora: Igual")
         print ("Humano: Igual")
         print ("----------------------------")
-        print ("Empate")
-        print ("----------------------------")
+        print ("Resultado: Puntos ganados 0")
+        
     
     elif su_opcion == 1 and respuesta_pc == 2:
         print ("----------------------------")
         print ("Computadora: Papel")
         print ("Humano: Piedra")
         print ("----------------------------")
-        print ("Resultado: Gana computadora!") 
-        print ("----------------------------")
+        print ("Resultado: Gana computadora!")        
         puntos = 2           
         
     elif su_opcion == 1 and respuesta_pc == 3:
@@ -38,8 +37,7 @@ def jugar():
         print ("Computadora: Tijera")
         print ("Humano: Piedra")
         print ("----------------------------")
-        print ("Resultado: Gana Humano!") 
-        print ("----------------------------")
+        print ("Resultado: Gana Humano!")        
         puntos = 1                     
         
     elif su_opcion == 2 and respuesta_pc == 1:
@@ -47,8 +45,7 @@ def jugar():
         print ("Computadora: Piedra")
         print ("Humano: Papel")
         print ("----------------------------")
-        print ("Resultado: Gana Humano!")
-        print ("----------------------------")
+        print ("Resultado: Gana Humano!")        
         puntos = 1                         
         
     elif su_opcion == 2 and respuesta_pc == 3:
@@ -56,24 +53,21 @@ def jugar():
         print ("Computadora: Tijera")
         print ("Humano: Papel")
         print ("----------------------------")
-        print ("Resultado: Gana Computadora!")
-        print ("----------------------------")                     
+        print ("Resultado: Gana Computadora!")                            
         puntos = 2
     elif su_opcion == 3 and respuesta_pc == 1:
         print ("----------------------------")       
         print ("Computadora: Piedra")
         print ("Humano: Tijera")
         print ("----------------------------")
-        print ("Resultado: Gana Computadora!")  
-        print ("----------------------------")                   
+        print ("Resultado: Gana Computadora!")                           
         puntos = 2
     elif su_opcion == 3 and respuesta_pc == 2:
         print ("----------------------------")       
         print ("Computadora: Papel")
         print ("Humano: Tijera")
         print ("----------------------------")
-        print ("Resultado: Gana Humano!") 
-        print ("----------------------------")  
+        print ("Resultado: Gana Humano!")          
         puntos = 1                    
         
     return puntos  
@@ -82,8 +76,7 @@ puntos_acumulados = 0
 pc = 0
 
 
-while True:    
-    print ()
+while True:        
     print ("Seleccione una opcion")
     print ("-------------------------------------")
     print ("1. Jugar")
@@ -105,14 +98,14 @@ while True:
     elif opcion == 2:
         if len(historial) > 0:
             ultima_accion = historial.pop()                      
-            print ("Ultimo resultado: ",ultima_accion)
-            print()
-            print ("********************************")
-            print (historial)
-            print ("********************************")
-        else:
+            print ("Ultimo resultado: ",ultima_accion)            
+            print ("-------------------------")
+            print (historial)            
+        if len(historial) == 0:
             print()
             print ("El historial esta vacio!")
+            print ("-------------------------")
+
        
        
     else:
