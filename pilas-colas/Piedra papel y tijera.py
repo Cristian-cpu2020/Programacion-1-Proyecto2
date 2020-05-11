@@ -22,8 +22,7 @@ Humano: Igual
 Resultado: Es un empate! """
         print ("----------------------------")        
         print (final)
-        print ("----------------------------")
-        
+        print ("----------------------------")        
     
     elif su_opcion == 1 and respuesta_pc == 2:#El usuario ingresa numero 1 y la compara con la pc
         final = f"""
