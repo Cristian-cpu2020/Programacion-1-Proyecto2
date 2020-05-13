@@ -113,7 +113,7 @@ while True:
             ultima_accion = historial.pop()                      
             print ("***Ultimo Resultado***")
             print (ultima_accion) 
-            print ("PUNTOS GANADOS: ", [puntos_acumulados],"---", "Puntos PC: ", [pc])           
+            print ("PUNTUACION ACTUAL: ", [puntos_acumulados],"---", "Puntos PC: ", [pc])           
             print ("-------------------------")                        
         if len(historial) == 0:    #Cuando el historial es 0 se imprime "Historial vacio"        
             print ("El historial esta vacio!")
